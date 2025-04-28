@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
   
-    let jsonPath = '/public/worte.json'; // CSV-Dateipfad als Prop
+    let jsonPath = '/worte.json'; // CSV-Dateipfad als Prop
   
     let words = $state([]); // Wörter aus der CSV-Datei"
     let currentWord = $state(''); // Aktuelles Wort
