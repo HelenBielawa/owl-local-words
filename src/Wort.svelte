@@ -35,6 +35,7 @@
   <style>
     .content {
       text-align: center;
+      width: 95%;
       color: white;
         z-index: 2;
     }

@@ -50,7 +50,6 @@ h1 {
   word-wrap: break-word; /* Lange Wörter umbrechen */
   overflow-wrap: break-word; /* Alternative Eigenschaft für ältere Browser */
   text-align: center; /* Zentriere den Text */
-  max-width: 90%; /* Besgrenze die Breite des Textes */
   padding-bottom: 1em;
   margin: 0 auto; /* Zentriere den Text horizontal */
 }
