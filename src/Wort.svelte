@@ -29,7 +29,7 @@
     <h1>{currentWord}</h1>
     <button onclick={showRandomWord}>Zufälliges neues Wort</button>
     <br>
-    <a href={currentBeispiel} target="_blank" rel="noopener noreferrer">Hörbeispiel</a>
+    <a href={currentBeispiel} target="_blank" rel="noopener noreferrer">Erklärung und Hörbeispiel</a>
   </div>
   
   <style>
@@ -57,11 +57,23 @@
       text-decoration: none;
       border-radius: 5px;
     }
-    a:hover {
-      background-color: #001d3d;
-    }
-  
+    /* Nur für Geräte ohne Touch-Eingabe */
+    @media (hover: hover) and (pointer: fine) {
     button:hover {
-      background-color: #001d3d;
+        background-color: #001d3d;
+    }
+
+    a:hover {
+        background-color: #001d3d;
+    }
+    }
+
+    /* :active-Stil für alle Geräte */
+    button:active {
+    background-color: #002a4d;
+    }
+
+    a:active {
+    background-color: #002a4d;
     }
   </style>
